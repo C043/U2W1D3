@@ -62,6 +62,7 @@ a:not(#shop) {
 @media screen and (min-width: 1024px) {
   body {
     display: flex;
+    justify-content: space-around;
   }
 
   nav {
@@ -148,6 +149,11 @@ button.golden {
     justify-content: space-around;
     gap: 20px;
   }
+
+  h1 {
+    margin: 0.5em 0.3em;
+  }
+
   .card {
     flex-shrink: 1;
     border-radius: 50% 50% 50px 50px;
@@ -155,6 +161,10 @@ button.golden {
 
   .card img {
     border-radius: 50px 50px 0 0;
+  }
+
+  .card p {
+    font-size: 0.7em;
   }
 
   button.golden {
@@ -205,7 +215,7 @@ article h3 {
 
 @media screen and (min-width: 1024px) {
   main {
-    margin: 0 2em;
+    margin: 0 auto 0 auto;
     width: 70vw;
   }
 
@@ -219,5 +229,21 @@ article h3 {
   }
   article div {
     order: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  article {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+  article img {
+    order: 0;
+    width: 50%;
+  }
+
+  article div {
+    width: 50%;
   }
 }
