@@ -16,28 +16,26 @@ body {
   font-size: 2em;
   font-weight: bold;
   text-decoration: none;
-  padding: 0.5em;
+  padding: 1em;
+  margin: 0.5em 0;
 }
 
 nav {
   background-color: lightgoldenrodyellow;
-  margin: 1em auto;
+  margin: 0 auto;
   padding: 1em;
-  width: 90vw;
-  border-radius: 50px;
   justify-content: space-around;
   align-items: center;
 }
 
 a {
   text-decoration: none;
-  padding: 0.5em;
   border-radius: 30px;
   color: rgb(94, 0, 0);
 }
 
 a:not(#shop) {
-  padding: 0.9em 0.4em;
+  padding: 1.1em 1em;
 }
 
 .golden {
@@ -61,8 +59,7 @@ a:not(#shop) {
 
 h1 {
   font-size: 3em;
-  margin-bottom: 0.5em;
-  margin: 1em;
+  margin: 0.5em 0 0.5em 1em;
 }
 
 .bold {
@@ -90,7 +87,7 @@ h1 {
   width: 100%;
   object-fit: cover;
   border-radius: 75px 75px 0 0;
-  margin-bottom: 0.9em;
+  margin-bottom: 0.5em;
 }
 
 .specifics {
@@ -110,4 +107,45 @@ button.golden {
   border-radius: 50px;
   color: rgb(94, 0, 0);
   cursor: pointer;
+}
+
+/* article */
+
+article {
+  background-color: lightgoldenrodyellow;
+  padding: 2em;
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 50px;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+article img {
+  width: 50%;
+}
+
+article div {
+  flex-direction: column;
+}
+
+article h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+  article h3 {
+    font-size: 1em;
+  }
+  article p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+  }
+  article img {
+    order: 1;
+    width: 100%;
+  }
 }
