@@ -32,6 +32,7 @@ a {
   text-decoration: none;
   border-radius: 30px;
   color: rgb(94, 0, 0);
+  cursor: pointer;
 }
 
 a:not(#shop) {
@@ -47,6 +48,7 @@ a:not(#shop) {
   justify-content: space-between;
   align-items: center;
   column-gap: 1em;
+  cursor: pointer;
 }
 
 #logo {
@@ -55,6 +57,37 @@ a:not(#shop) {
 
 #shop {
   padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .flex.bigger.golden {
+    order: -1;
+    margin: unset;
+    margin-top: 0.5em;
+  }
+
+  #shop {
+    cursor: pointer;
+  }
+
+  a:not(#shop) {
+    text-align: center;
+    padding: 32px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
 }
 
 h1 {
@@ -109,6 +142,26 @@ button.golden {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1024px) {
+  #card-container {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .card {
+    flex-shrink: 1;
+    border-radius: 50% 50% 50px 50px;
+  }
+
+  .card img {
+    border-radius: 50px 50px 0 0;
+  }
+
+  button.golden {
+    padding: 1em 2em;
+  }
+}
+
 /* article */
 
 article {
@@ -147,5 +200,24 @@ article h3 {
   article img {
     order: 1;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    margin: 0 2em;
+    width: 70vw;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  article img {
+    order: 1;
+    width: 100%;
+  }
+  article div {
+    order: 0;
   }
 }
