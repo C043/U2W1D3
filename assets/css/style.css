@@ -59,6 +59,9 @@ a:not(#shop) {
   padding: 0;
 }
 
+@media screen and (max-width: 425px) {
+}
+
 @media screen and (min-width: 1024px) {
   body {
     display: flex;
@@ -66,8 +69,10 @@ a:not(#shop) {
   }
 
   nav {
+    position: sticky;
+    top: 0;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     justify-content: flex-start;
     align-items: stretch;
     gap: 20px;
