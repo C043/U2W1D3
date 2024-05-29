@@ -59,7 +59,46 @@ a:not(#shop) {
   padding: 0;
 }
 
+h1 {
+  font-size: 3em;
+  margin: 0.5em 0 0.5em 1em;
+}
+
+.bold {
+  font-weight: bold;
+}
+.not-bold {
+  font-weight: 100;
+}
+
 @media screen and (max-width: 425px) {
+  body {
+    text-align: center;
+  }
+
+  nav {
+    border-radius: 100px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    text-align: center;
+    margin: 1em;
+    padding: 2em;
+  }
+
+  .flex.bigger.golden {
+    order: -1;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+
+  a:not(#shop) {
+    width: 45%;
+  }
+
+  h1 {
+    margin-left: 0;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -94,18 +133,6 @@ a:not(#shop) {
     border-radius: 50px;
     cursor: pointer;
   }
-}
-
-h1 {
-  font-size: 3em;
-  margin: 0.5em 0 0.5em 1em;
-}
-
-.bold {
-  font-weight: bold;
-}
-.not-bold {
-  font-weight: 100;
 }
 
 /* Card */
@@ -146,6 +173,17 @@ button.golden {
   border-radius: 50px;
   color: rgb(94, 0, 0);
   cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+  #card-container {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .card {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -201,6 +239,12 @@ article h3 {
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 425px) {
+  article {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 768px) {
